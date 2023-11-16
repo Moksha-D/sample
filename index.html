@@ -1,66 +1,39 @@
+<!DOCTYPE html>
 <html>
     <head>
-        <title>CACLCULATOR</title>
+        <title>First HTML</title>
     </head>
-    <style>
-        button{
-            background-color:darkslategray;
-            height: 100px;
-            width: 100px;
-        }
-        #result{
-            height: 100px;
-            width: 410px;
-            background-color: ghostwhite;
-        }
-    </style><body><center>
-    <h1>CALCULATOR</h1>
-    <input type="text" placeholder="0" id="result">
-    <table>
-        <tr>
-            <td><button onclick="display('7')">7</button></td>
-            <td><button onclick="display('8')">8</button></td>
-            <td><button onclick="display('9')">9</button></td>
-            <td><button onclick="display('+')">+</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="display('4')">4</button></td>
-            <td><button onclick="display('5')">5</button></td>
-            <td><button onclick="display('6')">6</button></td>
-            <td><button onclick="display('-')">-</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="display('1')">1</button></td>
-            <td><button onclick="display('2')">2</button></td>
-            <td><button onclick="display('3')">3</button></td>
-            <td><button onclick="display('*')">*</button></td>
-        </tr>
-        <tr>
-            <td><button onclick="display('0')">0</button></td>
-            <td><button onclick="clr('C')">C</button></td>
-            <td><button onclick="calculate('=')">=</button></td>
-            <td><button onclick="display('/')">/</button></td>
-        </tr>
-    </table>
+    <body>
+        <!--<center>-->
+        <!--this is comment line-->
+        <!--<img Src="prabha.jpg"alt="prabhas"height="200px"width="200px"><br>
+        <a href="https://www.youtube.com/watch?v=jnx9dqlO3nc">song</a>
+        </center>
+        <p><b><i><mark><del><ins><u>Hello</u></ins></del></mark></i></b></p>
+        <p>the <sup>hello</sup><sub>bye</sub></p>-->
+        <ol>
+            <li>soap</li>
+            <li>shampoo</li>
+            <li>oil</li>
+            <li>dhall</li>
+        </ol>
+        <ol type="i">
+            <li>soap</li>
+            <li>shampoo</li>
+            <li>oil</li>
+            <li>dhall</li>
+        </ol>
+        <ul>
+            <li>soap</li>
+            <li>shampoo</li>
+            <li>oil</li>
+            <li>dhall</li>
+        </ul>
+        <dl>
+            <dt>ECE</dt>
+            <dd>-we love Arduino</dd>
+            <dt>CSE</dt>
+            <dd>-we love computer</dd>
+        </dl>
     </body>
-    </center>
-    <script>
-        let output=document.getElementById("result");
-        function display(num){
-            output.value+=num
-        }
-        function calculate(){
-        try{
-            output.value=eval(output.value);
-        }
-        catch(err)
-        {
-            alert("Invalid");
-        }
-    }
-    function clr()
-{
-    output.value="";
-}   
- </script>
 </html>
