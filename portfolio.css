@@ -1,0 +1,26 @@
+body{
+    text-align: center;
+}
+li{
+    display: inline;
+    margin-right: 50px;
+}
+header{
+    background-color: aquamarine;
+    padding: 20px;
+}
+a{
+    text-decoration: none;
+    color: blue;
+}
+#Home img{
+    border-radius: 50%;
+}
+#Portfolio{
+    background-color: rgb(230, 208, 181);
+    padding: 10px;
+}
+footer{
+    background-color: aquamarine;
+    padding: 10px;
+}
