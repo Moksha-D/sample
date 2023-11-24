@@ -4,44 +4,61 @@
         <title>Calculator</title>
         <style>
             button{
+                font-size: large;
                 height: 100px;
                 width: 100px;
+                border-radius: 20%;
+                box-shadow: 3px 3px rgb(226, 225, 225);
             }
             #result{
+                font-size: large;
+                border-radius: 15px;
                 height: 100px;
                 width: 400px;
+                box-shadow: 3px 3px rgb(213, 211, 211);
+            }
+            body{
+                background-color: rgba(0, 255, 13, 0.04);
             }
         </style>
     </head>
     <body>
         <center>
             <h1>CALCULATOR</h1>
+            <table border="1">
             <input type="text" placeholder="0" id="result">
             <table>
+                <tr>
+                    <td><button onclick="display('(')">(</button></td>
+                    <td><button onclick="display(')')">)</button></td>
+                    <td><button onclick="display('.')"><h2>.</h2></button></td>
+                    <td><button onclick="clr()" style="background-color: red;">AC</button></td>
+                </tr>
                 <tr>
                     <td><button onclick="display('7')">7</button></td>
                     <td><button onclick="display('8')">8</button></td>
                     <td><button onclick="display('9')">9</button></td>
-                    <td><button onclick="display('+')">+</button></td>
+                    <td><button onclick="display('+')" style="color: magenta;"><h3>+</h3></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="display('4')">4</button></td>
                     <td><button onclick="display('5')">5</button></td>
                     <td><button onclick="display('6')">6</button></td>
-                    <td><button onclick="display('-')">-</button></td>
+                    <td><button onclick="display('-')" style="color: magenta;;"><h3>-</h3></button></td>
                 </tr>
                 <tr>
                     <td><button onclick="display('1')">1</button></td>
                     <td><button onclick="display('2')">2</button></td>
                     <td><button onclick="display('3')">3</button></td>
-                    <td><button onclick="display('*')">*</button></td>
+                    <td><button onclick="display('*')" style="color: magenta;"><h2>*</h2></button></td>
                 </tr>
                 <tr>
+                    <td><button onclick="display('00')">00</button></td>
                     <td><button onclick="display('0')">0</button></td>
-                    <td><button onclick="clr()">c</button></td>
-                    <td><button onclick="calculate()">=</button></td>
-                    <td><button onclick="display('/')">/</button></td>
+                    <td><button onclick="calculate()" style="background-color: lawngreen;">=</button></td>
+                    <td><button onclick="display('/')" style="color: magenta;"><h2>/</h2></button></td>
                 </tr>
+            </table>
             </table>
         </center>
     </body>
